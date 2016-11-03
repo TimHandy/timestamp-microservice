@@ -1,7 +1,7 @@
 // init project
 var express = require('express');
 var app = express();
-var PORT = process.argv[2]
+var port = process.env.PORT || 8080;
 
 function createNaturalDate(dateObject) {
   let month = dateObject.getMonth();
