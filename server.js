@@ -3,7 +3,7 @@
 // init project
 let express = require('express')
 let app = express()
-  // var port = process.env.PORT || 3000;
+let port = process.env.PORT || 3000;
 
 function createNaturalDate(dateObject) {
     let month = dateObject.getMonth()
@@ -49,6 +49,6 @@ app.get('/:time', function(req, res) {
 })
 
 // listen for requests :)
-let listener = app.listen(process.env.PORT || 3000, function() {
+let listener = app.listen(port, function() {
     console.log('Your app is listening on port ' + listener.address().port)
 })
