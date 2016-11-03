@@ -1,3 +1,5 @@
+'use strict'
+
 // init project
 let express = require('express')
 let app = express()
