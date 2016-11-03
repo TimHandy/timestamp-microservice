@@ -13,6 +13,10 @@ function createNaturalDate(dateObject) {
   return naturalDate;
 }
 
+app.get("/", function (req, res) {
+   res.send("I'm running");
+});
+
 app.get("/:time", function (req, res) {
   // grab the param value (date we hope)
   let time = req.params.time;
