@@ -32,7 +32,8 @@ app.get('/:time', function(req, res) {
     let unixTime
     let naturalDate
 
-    if (time.match(/[0-9]+/)[0].split('').length === time.length) {app.get('/:time', function(req, res) {
+    if (time.match(/[0-9]+/)[0].split('').length === time.length) {
+        app.get('/:time', function(req, res) {
     let time = req.params.time
     let unixTime
     let naturalDate
